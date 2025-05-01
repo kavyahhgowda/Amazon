@@ -53,7 +53,7 @@ public class Base {
 		System.out.println("from before method");
 		driver.findElement(By.id("login2")).click();
 
-		try {
+		try{
 			Thread.sleep(3000);
 		} catch (InterruptedException e2) {
 			// TODO: handle exception
@@ -65,7 +65,7 @@ public class Base {
 		driver.findElement(By.id("loginusername")).sendKeys(f1.getDataFromProperties(propPath, "username"));
 		driver.findElement(By.id("loginpassword")).sendKeys(f1.getDataFromProperties(propPath, "password"));
 		driver.findElement(By.xpath("//button[text()='Log in']")).click();
-
+System.out.println("hi we are adding");
 		try {
 			Thread.sleep(3000);
 		} catch (Exception e1) {
